@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>
+      SVIT-Sanchalana-19
+</title>
+<link rel="shortcut icon" href="D:/s/icon.ico">
+
+
+
+<style>
+body {
+  margin: 0;
+  font-family: cursive;
+  
+  position: relative;
+  overflow: hidden;
+background-repeat:no-repeat;
+
+}
+.container{
+  background-color: black;
+}
+.slide{
+  padding: 0px 350px;
+
+}
+.slide2{
+  padding: 0px 350px;
+}
+.slide3{
+  padding: 0px 300px;
+}
+.mySlides {display:none;
+  border-radius: 500px;
+  border:12px solid #458 ;
+
+}
+.mySlides2 {display:none;
+  border-radius: 100px;
+  
+}
+.mySlides3 {display:none;
+  border-radius: 100px;
+  
+  }
+.glow {
+  font-size: 60px;
+  color:orange;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.glow2{
+  font-size: 30px;
+  color: red;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+.neon2 {
+  color: white;
+  text-shadow:
+    0 0 5px blue,
+    0 0 10px blue,
+    0 0 20px cyan,
+    0 0 40px cyan,
+    0 0 80px cyan,
+    0 0 90px red,
+    0 0 100px red,
+    0 0 150px blue;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px #ff4da6, 0 0 60px blue, 0 0 70px red, 0 0 80px #ff4da6;
+  }
+}
+.header {
+  padding: 2px 16px;
+  background:darkgray;
+  color: #f1f1f1;
+  position: relative;
+}
+
+.sticky {
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  
+  background-color:white;
+  color: black;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 15px;
+  
+}
+
+#myBtn:hover {
+  background-color:brown;
+}
+
+
+
+h3{
+  font-size:2em;
+  text-shadow: 2px 2px blue;
+  color:orange;
+}
+.calender{
+  font-size: 1em;
+  top:0%;
+}
+p{
+  padding: 0px 0px;
+  position: relative;
+  background:brown;
+  border-radius: 10px ;
+  
+}
+
+h4{
+  font-size: 3em;
+  color: white;
+}
+.svit{
+  left:90%;
+  top:1%;
+  position: absolute;
+  
+  position: fixed;
+
+}
+
+.btndance{
+      padding: 10px 80px;
+      color: orange;
+      position: absolute;
+      background-color:red;
+      border-radius:20px ;
+      cursor: pointer;
+      top:58%;
+      left:0%;
+}
+.btnsing{
+      padding: 10px 60px;
+      color: orange;
+      position: absolute;
+     top:61%;
+      left:0%;
+      background-color:white;
+      border-radius:20px ;
+      cursor: pointer;
+}
+.btnintru{
+      padding: 10px 40px;
+      color: orange;
+      position: absolute;
+     top:64%;
+      left:0%;
+      background-color:red;
+      border-radius:20px ;
+      cursor: pointer;
+}
+.btnfaishon{
+      padding: 10px 20px;
+      color: orange;
+      position: absolute;
+     top:67%;
+      left:0%;
+      background-color:white;
+      border-radius:20px ;
+      cursor: pointer;
+}
+.btndance2{
+      padding: 10px 80px;
+      color: orange;
+      position: absolute;
+      background-color:darkred;
+      border-radius:20px ;
+      cursor: pointer;
+      top:58%;
+      left:80%;
+}
+.btnsing2{
+      padding: 10px 60px;
+      color: orange;
+      position: absolute;
+     top:61%;
+      left:80%;
+      background-color:white;
+      border-radius:20px ;
+      cursor: pointer;
+}
+.btnantak{
+      padding: 10px 40px ;
+      color: orange;
+      position: absolute;
+     top:64%;
+      left:80%;
+      background-color:darkred;
+      border-radius:80px ;
+      cursor: pointer;
+}
+.btnMR{
+      padding: 10px 20px;
+      color: orange;
+      position: absolute;
+     top:67%;
+      left:80%;
+      background-color:white;
+      border-radius:80px ;
+      cursor: pointer;
+}
+
+
+.btngame{
+      padding: 10px 80px;
+      color: black;
+      position: absolute;
+     top:85%;
+      left:0%;
+      background-color:red;
+      border-radius:20px ;
+      cursor: pointer;
+}
+.btnhoga{
+      padding: 10px 60px;
+      color: blue;
+      position: absolute;
+     top:88%;
+      left:0%;
+      background-color:white;
+      border-radius:20px ;
+      cursor: pointer;
+}
+.btndrag{
+      padding: 10px 40px;
+      color: blue;
+      position: absolute;
+      background-color:red;
+      border-radius:20px ;
+      cursor: pointer;
+      top:91%;
+      left:0%;
+}
+.btnmin{
+      padding: 10px 80px;
+      color: orange;
+      position: absolute;
+     top:85%;
+      left:80%;
+      background-color:darkred;
+      border-radius:20px ;
+      cursor: pointer;
+}
+.btnmash{
+      padding: 10px 60px ;
+      color: orange;
+      position: absolute;
+     top:88%;
+      left:80%;
+      background-color:white;
+      border-radius:80px ;
+      cursor: pointer;
+}
+.btnhunt{
+      padding: 10px 20px;
+      color: orange;
+      position: absolute;
+     top:91%;
+      left:80%;
+      background-color:darkred;
+      border-radius:80px ;
+      cursor: pointer;
+}
+.btndance:hover{
+      background-color: green;
+}
+.btnsing:hover{
+      background-color: green;
+}
+.btnintru:hover{
+      background-color: green;
+}
+.btnfaishon:hover{
+      background-color: green;
+}
+.btndance2:hover{
+      background-color: green;
+}
+.btnsing2:hover{
+      background-color: green;
+}
+.btnantak:hover{
+      background-color: green;
+}
+.btnMR:hover{
+      background-color: green;
+}
+.btnmash:hover{
+      background-color: green;
+}
+.btndrag:hover{
+      background-color: green;
+}
+.btnmin:hover{
+      background-color:green;
+}
+.btngame:hover{
+      background-color: green;
+}
+.btnhoga:hover{
+      background-color: green;
+}
+.btnhunt:hover{
+      background-color: green;
+}
+.vid{
+  align-self: center;
+  float: center;
+  border:10px solid green;
+  border-radius: 100% ;
+  width: 100%;
+ 
+  background-color:darkgray;
+}
+.small{
+  background-color: black;
+}
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration:none;
+  font-size: 15px;
+  color: white;
+  border-radius: 30px;
+}
+
+#mySidenav a:hover {
+  left: 0;
+  background-color: green;
+}
+
+#about {
+  top: 20px;
+  background-color: red;
+}
+image .sai{
+  padding: 10px 800px;
+  top:100%;
+  left:90%;
+}
+</style>
+
+<body>
+<div class="container">
+<h1 class="glow" >Sanchalana 2k19</h1><br>
+<div id="mySidenav" class="sidenav">
+    
+  <a href="http://saividya.ac.in/article/show/62/0/ABOUT%20SVIT.html" id="about">About Svit</a></div>
+   <img class="sai" src="D:\s\sai2.png"width="1380px">
+   <br>
+   <br>
+  <br>
+  <br>
+  <br>
+  <a href="http://saividya.ac.in/"><img class="svit" src="D:\s\pic23.png" style="width:100px "></a>
+  <input type="image" src="D:\s\top_hover.png"onclick="topFunction()" id="myBtn" width="50px"></button>
+<div class="slide" style="max-width:100%" >
+  <a href="https://www.google.com/"><img class="mySlides animate-right " alt="this is poc"src="D:\s\pic1.jpg"width="width" style="width:620px ">
+   <a href="https://www.facebook.com/"><img class="mySlides w3-animate-left" src="D:\s\pic2.jpg" style="width:600px"></a></a>
+  <img class="mySlides animate-left  "alt="this is poc" src="D:\s\pic3.jpg" style="width:700px">
+  <img class="mySlides w3-animate-right " src="D:\s\pic24.png" style="width:700px ">
+  <img class="mySlides w3-animate-left " src="D:\s\pic4.jpg" style="width:700px">
+   <img class="mySlides w3-animate-right" src="D:\s\pic15.jpg" style="width:700px">
+  <img class="mySlides w3-animate-right " src="D:\s\pic5.jpg" style="width:700px ">
+  <img class="mySlides w3-animate-right " src="D:\s\pic6.jpg" style="width:700px ">
+<img class="mySlides w3-animate-right " src="D:\s\pic19.JPG" style="width:700px ">
+    <img class="mySlides w3-animate-top" src="D:\s\pic14.jpg"width="width" style="width:700px ">
+  <img class="mySlides w3-animate-top" src="D:\s\pic13.jpg"width="width" style="width:700px ">
+  <img class="mySlides w3-animate-right" src="D:\s\pic17.jpg" style="width:600px">
+ 
+</div>
+ 
+
+</div><br>
+
+<br>
+<br>
+<p class="small" align="center"><marquee bgcolor="lightblue"   behavior="alternate" direction="left" width="50%"><font color="red" size ="5em">Old Memories-Sanchalana</marquee></font> </p>
+
+</p>
+  <video class="vid" width="100%"height="300" autoplay loop muted>
+  <source src="D:\s\video1.mp4"type"video/mp4">
+</video>
+<p><marquee direction="left"behavior="right"><h3 class="neon2">Its Season for Culture and Fun</h3></p></marquee>
+
+ <br><br><h4>Cultural Events</h4></div><br><br><br><br>
+  <button class="btndance"">Solo Dance</button><br>
+   <button class="btnsing"">Solo Singing</button>
+    <button class="btnintru"">Instrumental</button>
+     <button class="btnfaishon"">Faishon Show</button>
+  <button class="btndance2"">Group Dance</button><br>
+   <button class="btnsing2"">Group Snging</button>
+    <button class="btnantak"">Antakshari</button>
+     <button class="btnMR"">Mr.&Mrs Svit</button>
+  <div class="slide2">
+    <img class="mySlides2 w3-animate-top" src="D:\s\pic16.png"width="width" style="width:600px ">
+    <img class="mySlides2 w3-animate-right" src="D:\s\pic18.png"width="width" style="width:500px ">
+    <img class="mySlides2 w3-animate-top" src="D:\s\pic14.jpg"width="width" style="width:600px ">
+  <img class="mySlides2 w3-animate-top" src="D:\s\pic13.jpg"width="width" style="width:600px ">
+  <img class="mySlides2 w3-animate-right" src="D:\s\pic12.jpg" style="width:600px">
+  <img class="mySlides2 w3-animate-right" src="D:\s\pic15.jpg" style="width:600px">
+  <img class="mySlides2 w3-animate-right" src="D:\s\pic17.jpg" style="width:600px">
+
+</div>
+
+
+<br><br><br><br><h4>Fun Events</h4></div></br>
+  <button class="btngame"">Gaming</button><br>
+   <button class="btnhoga"">Hogathon</button>
+    <button class="btndrag"">Slow Drag</button>
+  <button class="btnmin"">Super Minute</button><br>
+   <button class="btnmash"">Dubmash</button>
+    <button class="btnhunt"">Treasure Hunt</button>
+    
+  <div class="slide3">
+  <img class="mySlides3 w3-animate-left" src="D:\s\pic20.jpg"width="width" style="width:700px ">
+  <img class="mySlides3 w3-animate-fadding" src="D:\s\pic21.jpg" style="width:750px">
+  <img class="mySlides3 w3-animate-fadding" src="D:\s\pic22.jpg" style="width:400px">
+</div>
+
+<div class="header" id="myHeader">
+  <h2 class="glow2">Sanchalana</h2>
+</div>
+
+
+
+<script>
+  var myIndex = 0;
+var myIndex2=0;
+var myIndex3=0;
+carousel();
+carousel2();
+carousel3();
+function carousel() {
+  var i;
+  
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500); }
+  function carousel2() {
+    var j;
+   var y = document.getElementsByClassName("mySlides2");
+  for (j = 0; j < y.length; j++) {
+    y[j].style.display = "none";  
+  }
+  myIndex2++;
+  if (myIndex2 > y.length) {myIndex2 = 1}    
+  y[myIndex2-1].style.display = "block";  
+  setTimeout(carousel2, 3500); }
+  function carousel3() {
+    var k;
+   var x = document.getElementsByClassName("mySlides3");
+  for (k = 0; k < x.length; k++) {
+    x[k].style.display = "none";  
+  }
+  myIndex3++;
+  if (myIndex3 > x.length) {myIndex3 = 1}    
+  x[myIndex3-1].style.display = "block";  
+  setTimeout(carousel3, 3500); }
+  
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
