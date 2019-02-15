@@ -8,7 +8,11 @@
       SVIT-Sanchalana-19
 </title>
 <link rel="shortcut icon" href="icon.ico">
-
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
 <style>
@@ -74,6 +78,11 @@ background-repeat:no-repeat;
     0 0 100px #0ff,
     0 0 150px #0ff;
 }
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
 .neon2 {
   color: white;
   text-shadow:
@@ -389,6 +398,35 @@ image .sai{
 </style>
 
 <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
 <div class="container">
 <h1 class="glow" >Sanchalana 2k19</h1><br>
 <div id="mySidenav" class="sidenav">
@@ -430,7 +468,7 @@ image .sai{
   <source src="video1.mp4"type"video/mp4">
 </video>
 <p><marquee direction="left"behavior="right"><h3 class="neon2">Its Season for Culture and Fun</h3></p></marquee>
-
+<div id="section1" class="container-flex">
  <br><br><h4>Cultural Events</h4></div><br><br><br><br>
   <button class="btndance"">Solo Dance</button><br>
    <button class="btnsing"">Solo Singing</button>
@@ -448,10 +486,10 @@ image .sai{
   <img class="mySlides2 w3-animate-right" src="pic12.jpg" style="width:600px">
   <img class="mySlides2 w3-animate-right" src="pic15.jpg" style="width:600px">
   <img class="mySlides2 w3-animate-right" src="pic17.jpg" style="width:600px">
-
+</div>
 </div>
 
-
+<div id="section2" class="container-flex">
 <br><br><br><br><h4>Fun Events</h4></div></br>
   <button class="btngame"">Gaming</button><br>
    <button class="btnhoga"">Hogathon</button>
@@ -464,7 +502,7 @@ image .sai{
   <img class="mySlides3 w3-animate-left" src="pic20.jpg"width="width" style="width:700px ">
   <img class="mySlides3 w3-animate-fadding" src="pic21.jpg" style="width:750px">
   <img class="mySlides3 w3-animate-fadding" src="pic22.jpg" style="width:400px">
-</div>
+</div></div>
 
 <div class="header" id="myHeader">
   <h2 class="glow2">Sanchalana</h2>
