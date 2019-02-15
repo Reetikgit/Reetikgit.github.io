@@ -19,7 +19,7 @@
 body {
   margin: 0;
   font-family: cursive;
-  
+  background-color:black;
   position: relative;
   overflow: hidden;
 background-repeat:no-repeat;
@@ -29,14 +29,14 @@ background-repeat:no-repeat;
   background-color: black;
 }
 .slide{
-  padding: 0px 350px;
+  padding: 0px 250px;
 
 }
 .slide2{
   padding: 0px 350px;
 }
 .slide3{
-  padding: 0px 300px;
+  padding: 0px 350px;
 }
 .mySlides {display:none;
   border-radius: 500px;
@@ -58,6 +58,9 @@ background-repeat:no-repeat;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+  position: absolute;
+  top:2%;
+  left:35%;
 }
 .glow2{
   font-size: 30px;
@@ -78,11 +81,7 @@ background-repeat:no-repeat;
     0 0 100px #0ff,
     0 0 150px #0ff;
 }
-#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
 .neon2 {
   color: white;
   text-shadow:
@@ -166,11 +165,9 @@ h4{
 }
 .svit{
   left:90%;
-  top:1%;
+  top:3%;
   position: absolute;
   
-  position: fixed;
-
 }
 
 .btndance{
@@ -379,6 +376,7 @@ h4{
   font-size: 15px;
   color: white;
   border-radius: 30px;
+  top:3%;
 }
 
 #mySidenav a:hover {
@@ -390,10 +388,11 @@ h4{
   top: 20px;
   background-color: red;
 }
-image .sai{
-  padding: 10px 800px;
-  top:100%;
-  left:90%;
+.sai{
+  padding: 0px 200px;
+  top:8%;
+  left:0%;
+  position: absolute;
 }
 </style>
 
@@ -408,14 +407,14 @@ image .sai{
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="#">Sanchalana</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="#section1">Section 1</a></li>
-          <li><a href="#section2">Section 2</a></li>
-          <li><a href="#section3">Section 3</a></li>
+          <li><a href="#section1">Cultural Event</a></li>
+          <li><a href="#section2">Fun Events</a></li>
+          <li><a href="#section3">Art Events</a></li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#section41">Section 4-1</a></li>
@@ -426,11 +425,15 @@ image .sai{
       </div>
     </div>
   </div>
-</nav>    
+</nav>  
+<br>
+<br>
+<br>
+<br><br>  
 <div class="container">
 <h1 class="glow" >Sanchalana 2k19</h1><br>
 <div id="mySidenav" class="sidenav">
-    
+ <br><br>   
   <a href="http://saividya.ac.in/article/show/62/0/ABOUT%20SVIT.html" id="about">About Svit</a></div>
    <img class="sai" src="sai2.png"width="1380px">
    <br>
@@ -438,6 +441,9 @@ image .sai{
   <br>
   <br>
   <br>
+  <br>
+  <br>
+  <br><br><br>
   <a href="http://saividya.ac.in/"><img class="svit" src="pic23.png" style="width:100px "></a>
   <input type="image" src="top_hover.png"onclick="topFunction()" id="myBtn" width="50px"></button>
 <div class="slide" style="max-width:100%" >
@@ -464,9 +470,7 @@ image .sai{
 <p class="small" align="center"><marquee bgcolor="lightblue"   behavior="alternate" direction="left" width="50%"><font color="red" size ="5em">Old Memories-Sanchalana</marquee></font> </p>
 
 </p>
-  <video class="vid" width="100%"height="300" autoplay loop muted>
-  <source src="video1.mp4"type"video/mp4">
-</video>
+  
 <p><marquee direction="left"behavior="right"><h3 class="neon2">Its Season for Culture and Fun</h3></p></marquee>
 <div id="section1" class="container-flex">
  <br><br><h4>Cultural Events</h4></div><br><br><br><br>
@@ -503,13 +507,6 @@ image .sai{
   <img class="mySlides3 w3-animate-fadding" src="pic21.jpg" style="width:750px">
   <img class="mySlides3 w3-animate-fadding" src="pic22.jpg" style="width:400px">
 </div></div>
-
-<div class="header" id="myHeader">
-  <h2 class="glow2">Sanchalana</h2>
-</div>
-
-
-
 <script>
   var myIndex = 0;
 var myIndex2=0;
