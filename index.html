@@ -81,7 +81,8 @@ background-repeat:no-repeat;
 .container{
   background-color: black;
   width: 100%;
-background-attachment: fixed;
+  height: 1000px;
+
 }
 .container1{
 background-size: 100px;
@@ -98,14 +99,14 @@ height: auto;
 .slide2{
  
   position: relative;
-  top:-450px;
-  left: 90%;
+  top:-500px;
+  left: 10%;
 
 }
 .slide3{
   position: relative;
   
-  top:-350px;
+  top:-450px;
   left: 35%;
 }
 
@@ -603,22 +604,77 @@ h4{
   <a href="http://saividya.ac.in/"><img class="svit" src="pic23.png" style="width:100px "></a>
   <input type="image" src="top_hover.png"onclick="topFunction()" id="myBtn" width="70px">
 
-<div class="slide" style="max-width:100%" >
- 
-   <a href="https://www.facebook.com/"><img class="mySlides w3-animate-left" src="pic2.jpg" style="width:700px"></a></a>
-  <img class="mySlides animate-left  "alt="this is poc" src="pic3.jpg" style="width:700px">
-  <img class="mySlides w3-animate-right " src="pic24.png" style="width:630px ">
-  <img class="mySlides w3-animate-left " src="pic4.jpg" style="width:700px">
-   <img class="mySlides w3-animate-right" src="pic15.jpg" style="width:700px">
-  <img class="mySlides w3-animate-right " src="pic5.jpg" style="width:700px ">
-  <img class="mySlides w3-animate-right " src="pic6.jpg" style="width:700px ">
-<img class="mySlides w3-animate-right " src="pic19.JPG" style="width:700px ">
-    <img class="mySlides w3-animate-left" src="pic14.jpg"width="width" style="width:700px ">
-  <img class="mySlides w3-animate-left" src="pic13.jpg"width="width" style="width:700px ">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
+      <li data-target="#myCarousel" data-slide-to="9"></li>
+      <li data-target="#myCarousel" data-slide-to="10"></li>
+    </ol>
 
- <br><br><br><br><br>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="pic2.jpg"  style="width:100%;">
+      </div>
+      <div class="item ">
+        <img src="pic3.jpg"  style="width:100%;">
+      </div>
+     
+      <div class="item ">
+        <img src="pic4.jpg"  style="width:100%;">
+      </div>
+      <div class="item ">
+        <img src="pic5.jpg"  style="width:100%;">
+      </div>
+      <div class="item ">
+        <img src="pic6.jpg"  style="width:100%;">
+      </div>
+    
+      <div class="item ">
+        <img src="pic13.jpg"  style="width:100%;">
+      </div>
+      <div class="item ">
+        <img src="pic14.jpg"  style="width:100%;">
+      </div>
+      <div class="item ">
+        <img src="pic15.jpg"  style="width:100%;">
+      </div>
+        <div class="item ">
+        <img src="pic17.jpg"  style="width:100%;">
+      </div>
+      <div class="item ">
+        <img src="pic19.jpg"  style="width:100%;">
+      </div>
+     
+      <div class="item ">
+        <img src="pic21.jpg"  style="width:100%;">
+      </div>
+      <div class="item ">
+        <img src="pic24.png"  style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </div>
-</div>
+
 
 <p class="small" align="center"><marquee bgcolor="lightblue"behavior="alternate" direction="left" width="50%"><font color="red" size ="5em">Old Memories-Sanchalana</marquee></font> </p>
 
@@ -645,6 +701,7 @@ h4{
   
      <div class="slide2">
   
+     
     <img class="mySlides2 w3-animate-top" src="pic16.png"width="width" style="width:650px ">
     <!-- /*<img class="mySlides2 w3-animate-right" src="pic18.png"width="width" style="width:400px ">*/ -->
     <img class="mySlides2 w3-animate-top" src="pic14.jpg"width="width" style="width:650px ">
