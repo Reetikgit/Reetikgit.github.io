@@ -244,16 +244,15 @@ h4{
 }
 
 .btndance{
-      padding: 10px 15px;
+      padding: 10px 10px;
       color: orange;
-      position: relative;
-      left: 23%;
-      top:1vw;
+      position: absolute;
+      left:200%;
       background-color:brown;
       border-radius:20px ;
       cursor: pointer;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 50px;
       font-size: 1.5em;
      
 
@@ -261,65 +260,63 @@ h4{
 .btnsing{
       padding: 10px 15px;
       color: orange;
-     position: relative;
-     top:2.4vw;
-        left: 23%;
+      position: absolute;
+      left:300%;
       background-color:white;
       border-radius:20px ;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 50px;
       font-size: 1.5em;
       cursor: pointer;
 }
 .btnintru{
       padding: 10px 15px;
-      position: absolute;
+     position: absolute;
       color: orange;
       box-shadow: 2px 2px 7px 1px red;
+      top:130%;
+      left: 234%;
       font-size: 1.5em;
       background-color:brown;
       border-radius:20px ;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 50px;
       cursor: pointer;
-      top:-175px;
-      left:46%;
+     
 }
 .btnfaishon{
       padding: 10px 10px;
       color: orange;
-     
-    position: relative;
-     border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
+      position: absolute;
+      left:150%;
+      top:50%;
+     border-top-right-radius: 20px;
+      border-bottom-left-radius: 50px;
      box-shadow: 2px 2px 7px 1px red;
       font-size: 1.5em;
       background-color:brown;
-     top:-1vw;
-     left:51%;
+     
       cursor: pointer;
 }
 .btndance2{
       padding: 10px 15px;
       color: orange;
-      position: relative;
-      left: 50%;
-      top:-6.3vw;
+     position: absolute;
       background-color:brown;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
-      
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 30px;
+      top:50%;
+      left:355%;
       cursor: pointer;
       font-size: 1.5em;
      }
 .btnsing2{
       padding: 10px 15px;
-      color: orange;
-      position: relative;
-      top:-5vw;
-      left: 50%;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
+  position: absolute;
+  left:360%;
+  top:220%;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 30px;
       font-size: 1.5em;
       background-color:white;
     
@@ -328,23 +325,21 @@ h4{
 .btnantak{
       padding: 10px 15px ;
       color: orange;
-      position: relative;
-    
+      position: absolute;
+    left: 130%;
+    top:220%;
       font-size: 1.5em;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 30px;
       background-color:brown;
-      top:-7.5vw;
-      left:26%;
+    
       cursor: pointer;
 }
 .btnMR{
       padding: 10px 15px;
       color: orange;
       font-size: 1.5em;
-      position: relative;
-    left: 1%;
-    top:-1vw;
+  
      border-top-right-radius: 80px;
       border-bottom-left-radius: 90px;
      
@@ -564,7 +559,9 @@ div.navbar-collapse ul.navbar-nav li{
   background-color:cyan;
   border-radius: 0%;
 }
+.btn btn-primary btn-block{
 
+}
 </style>
 
 <body>
@@ -719,11 +716,9 @@ div.navbar-collapse ul.navbar-nav li{
       
       
       <div class="item active ">
-        <img src="pic1.jpg"  style="width:110%;">
+        <img src="pic3.jpg"  style="width:110%;">
       </div>
-      <div class="item ">
-        <img src="pic3.jpg"  style="width:100%;">
-      </div>
+     
      
       <div class="item ">
         <img src="pic19.JPG"  style="width:100%;">
@@ -736,9 +731,24 @@ div.navbar-collapse ul.navbar-nav li{
     </div>
 
  </div></div></div>
- 
-    <div class="btnset1">
-    <a href="#" class="btndance" role="button" aria-pressed="true">Solo Dance</a><br><br>
+    <div class="row">
+    <div class="col-md-4 col-lg-2">
+      <button class="btndance">Solo Dance</button>
+       <button class="btnsing">Solo Singing</button>
+       <button class="btndance2">Group Dance</button>
+       <button class="btnsing2">Group Singing</button>
+       <button class="btnintru">Instrumental</button>
+       <button class="btnantak">Antakshari</button>
+       <button class="btnfaishon">Faishon Show</button>
+        <button class="btnMR">Mr&Ms Svit</button>
+      
+      
+    </div>
+  </div>
+  
+
+
+ <!--    <a href="#" class="btndance" role="button" aria-pressed="true">Solo Dance</a><br><br>
     <a href="#" class="btnsing" role="button" aria-pressed="true">Solo Singing</a><br><br>
     <a href="#" class="btndance2" role="button" aria-pressed="true">Group Dance</a><br><br>
     <a href="#" class="btnsing2" role="button" aria-pressed="true">Group Singing</a><br>
@@ -747,9 +757,9 @@ div.navbar-collapse ul.navbar-nav li{
      <a href="#" class="btnantak" role="button" aria-pressed="true">Antakshari</a>
     <a href="#" class="btnMR" role="button" aria-pressed="true">Mr&Miss Svit</a>
     <div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
-</div>
+ -->
 
-
+<br><br><br><br>
 <br><br>
 </div>
 <div id="section2" class="container-fluid">
