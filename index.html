@@ -80,6 +80,7 @@ border-top-right-radius: 400px;
   color:orange;
   font-size:8vw;
   left:23%;
+  top:3vw;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
@@ -136,7 +137,7 @@ left:58%;
     0 0 9px red,
     0 0 10px red,
     0 0 15px blue;
-    top:7.5%;
+    top:25vw;
     left:0%;
 }
 
@@ -238,8 +239,9 @@ h4{
   
   position: absolute;
   left: 88%;
-  top:6.5%;
+  top:18.5vw;
   width: 12%;
+  background-attachment: fixed;
   
 }
 
@@ -288,12 +290,41 @@ h4{
       cursor: pointer;
      
 }
+.btnact{
+      padding: 10px 15px;
+     position: absolute;
+      color: orange;
+      box-shadow: 2px 2px 7px 1px indigo;
+      width:23vw;
+      left: 38%;
+      font-size: 1.5vw;
+      background-color:darkred;
+      border-radius:20px ;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 50px;
+      cursor: pointer;
+     
+}
 .btnfaishon{
       padding: 10px 10px;
       color: orange;
       position: absolute;
      width:18vw;
       left:22%;
+     border-top-right-radius: 20px;
+      border-bottom-left-radius: 50px;
+     box-shadow: 2px 2px 7px 1px indigo;
+      font-size: 1.5vw;
+      background-color:white;
+     
+      cursor: pointer;
+}
+.btnmehendi{
+      padding: 10px 10px;
+      color: orange;
+      position: absolute;
+     width:18vw;
+      left:30%;
      border-top-right-radius: 20px;
       border-bottom-left-radius: 50px;
      box-shadow: 2px 2px 7px 1px indigo;
@@ -361,84 +392,25 @@ h4{
 
       cursor: pointer;
 }
-
-
-.btngame{
-      padding: 10px 30px;
+.btncartoon{
+      padding: 10px 15px;
       color: orange;
-      position: relative;
+      font-size: 1.5vw;
+      position: absolute;
+      width:17vw;
+      left:42vw;
+
+      box-shadow: 2px 2px 7px 1px indigo;
+    
+     border-top-right-radius: 80px;
+      border-bottom-left-radius: 90px;
      
-      font-size: 1.5em;
-      background-color:brown;
-      border-radius:20px ;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
+      background-color:#900;
+      ;
       cursor: pointer;
-}
-.btnhoga{
-      padding: 10px 30px;
-      color: orange;
-      font-size:1.5em;
-      position: relative;
-     top:50px;
-      left:0%;
-      background-color:white;
-      border-radius:20px ;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
-      cursor: pointer;
-}
-.btndrag{
-      padding: 10px 30px;
-      color: orange;
-       font-size:1.5em;
-      position: relative;
-      background-color:brown;
-      border-radius:20px ;
-      cursor: pointer;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
-      top:95px;
-      left:0%;
 }
 
-.btnmin{
-      padding: 10px 30px;
-      color: orange;
-      position: relative;
-       font-size:1.5em;
-       border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
-     top:140px;
-      left:0%;
-      background-color:brown;
-     
-      cursor: pointer;
-}
-.btnmash{
-      padding: 10px 30px ;
-      color: orange;
-      position: relative;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
-     top:-215px;
-      left:15%;
-      background-color:white;
-      font-size: 1.5em;
-      cursor: pointer;
-}
-.btnhunt{
-      padding: 10px 30px;
-      color: orange;
-      position: relative;
-     top:-160px;
-      left:15%;
-      background-color:brown;
-      font-size: 1.5em;
-      border-top-right-radius: 80px;
-      border-bottom-left-radius: 90px;
-      cursor: pointer;
-}
+
 .btndance:hover{
     background-color: #003985;
       transition-duration: 0.4s;
@@ -508,7 +480,7 @@ h4{
   font-size: 15px;
   color: white;
   border-radius: 30px;
-  top:5%;
+  top:3%;
 }
 
 div.navbar-collapse ul.navbar-nav li{
@@ -564,13 +536,25 @@ div.navbar-collapse ul.navbar-nav li{
 }
 #section2{
   display: inline-block;
-  
+}
+#section3{
+  display: inline-block;
 }
 .part1{
   background-color: #544;
+  background-attachment: fixed;
 }
 .part2{
   background-color: #520;
+  background-attachment: fixed;
+}
+.part3{
+  background-color: #750;
+  background-attachment: fixed;
+}
+.part5{
+  background-color: #450;
+  background-attachment: fixed;
 }
 .btnset1{
 
@@ -600,12 +584,12 @@ div.navbar-collapse ul.navbar-nav li{
       <div class="collapse navbar-collapse abc" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="color"><a href="#section1">Cultural Event</a></li>
-          <li class="color"><a href="#section2">Fun Events</a></li>
+          <li class="color"><a href="#section2">Fun House</a></li>
           <li class="color"><a href="#section3">Art Events</a></li>
-          <li class="color"><a href="#section3">Theather Events</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+          <li class="color"><a href="#section4">Theather Events</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li class="color"><a href="#section41">Section 4-1</a></li>
+              <li class="color"><a href="#section41">Literary Events</a></li>
               <li class="color"><a href="#section42">Section 4-2</a></li>
             </ul>
           </li>
@@ -615,9 +599,7 @@ div.navbar-collapse ul.navbar-nav li{
   </div>
 </nav>  
 <br>
-<br>
-<br>
- 
+
 
 <h1 class="glow" >Sanchalana 19</h1><br>
 
@@ -725,7 +707,7 @@ div.navbar-collapse ul.navbar-nav li{
 <div class="part1">
 <div id="section1" class="container1">
 
-  <br><br><h4>Cultural Events</h4><br>
+  <br><br><h4>Cultural Carnivals</h4><br>
  <br>
   <div id="myCarousel" class="carouselslide" data-ride="carousel">
   
@@ -749,19 +731,18 @@ div.navbar-collapse ul.navbar-nav li{
   
     </div>
 
- </div>
+ </div><br>
       <a href="#"><button type="button" class=" btndance"> <span class="text">Solo Dance</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btndance2"> <span class="text">Group Dance</span></button></a><br><br><br>
-      <a href="#"><button type="button" class="btn btn-info btn-block btnsing"> <span class="text">Svit Idol</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btnsing2"> <span class="text">Mono Acting</span></button></a><br><br><br>
-  <a href="#"><button type="button" class="btn btn-info btn-block btnintru"> <span class="text">Instrumental</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btnantak"> <span class="text">Mime</span></button></a><br><br><br>
-  <a href="#"><button type="button" class="btn btn-info btn-block btnfaishon"> <span class="text">Faishon Show</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btnMR"> <span class="text">Mr&Ms Svit</span></button></a>
+      <a href="#"><button type="button" class="btn btn-info btn-block btnsing"> <span class="text">Svit Idol</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btnsing2"> <span class="text">Mr&Ms Svit</span></button></a><br><br><br>
+  <a href="#"><button type="button" class="btn btn-info btn-block btnintru"> <span class="text">Instrumental</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btnantak"> <span class="text">Faishon Show></span></button></a><br><br><br>
+
       
 </div>
 <br><br><br><br><br></div>
-
-
+<br><br>
 <div class="part2">
 <div id="section2" class="container-fluid">
-<br><br><h4>Fun Events</h4><br>
+<br><br><h4>Fun & Games</h4><br>
  <br>
  <div id="myCarousel" class="carouselslide" data-ride="carousel">
   
@@ -773,14 +754,22 @@ div.navbar-collapse ul.navbar-nav li{
       <div class="item active ">
         <img src="pic20.jpg"  style="width:110%;">
       </div>
-     
+     <div class="item ">
+        <img src="pic28.jpg"  style="width:100%;">
+      </div> 
       <div class="item ">
         <img src="pic26.png"  style="width:100%;">
       </div> 
        <div class="item ">
         <img src="pic27.jpg"  style="width:100%;">
       </div> 
-    </div></div>
+      <div class="item ">
+        <img src="pic28.jpg"  style="width:100%;">
+      </div> 
+      <div class="item ">
+        <img src="dub.jpg"  style="width:100%;">
+      </div> 
+    </div></div><br>
 <a href="#"><button type="button" class=" btndance"> <span class="text">Gaming</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btndance2"> <span class="text">Dubmash</span></button></a><br><br><br>
       <a href="#"><button type="button" class="btn btn-info btn-block btnsing"> <span class="text">Stand Up-Comedy</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btnsing2"> <span class="text">Slow drag</span></button></a><br><br><br>
   <a href="#"><button type="button" class="btn btn-info btn-block btnintru"> <span class="text">Super Minute</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btnantak"> <span class="text">Hogathon</span></button></a><br><br><br>
@@ -789,7 +778,119 @@ div.navbar-collapse ul.navbar-nav li{
   
  </div>
 <br><br><br><br></div>
+<br><br>
+<div class="part3">
+<div id="section4" class="container1">
 
+  <br><br><h4>Theater-oF-WaR</h4><br>
+ <br>
+  <div id="myCarousel" class="carouselslide" data-ride="carousel">
+  
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      
+      
+      <div class="item active ">
+        <img src="pic3.jpg"  style="width:110%;">
+      </div>
+     
+     
+      <div class="item ">
+        <img src="pic19.JPG"  style="width:100%;">
+      </div>
+     
+      <div class="item ">
+        <img src="pic8.jpg"  style="width:100%;">
+      </div>
+  
+    </div>
+
+ </div><br>
+      <a href="#"><button type="button" class=" btndance"> <span class="text">Photography</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btndance2"> <span class="text">Short Movie</span></button></a><br><br><br>
+      <a href="#"><button type="button" class="btn btn-info btn-block btnsing"> <span class="text">Mime</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btnsing2"> <span class="text">Mad Adds</span></button></a><br><br><br>
+  <a href="#"><button type="button" class="btn btn-info btn-block btnact"> <span class="text">Mono Acting</span></button></a>
+</div>
+<br><br><br><br><br></div>
+
+<div class="part4">
+<div id="section3" class="container-fluid">
+<br><br><h4>Artistic Challenges</h4><br>
+ <br>
+ <div id="myCarousel" class="carouselslide" data-ride="carousel">
+  
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      
+      
+      <div class="item active ">
+        <img src="pic20.jpg"  style="width:110%;">
+      </div>
+     <div class="item ">
+        <img src="pic28.jpg"  style="width:100%;">
+      </div> 
+      <div class="item ">
+        <img src="pic26.png"  style="width:100%;">
+      </div> 
+       <div class="item ">
+        <img src="pic27.jpg"  style="width:100%;">
+      </div> 
+      <div class="item ">
+        <img src="pic28.jpg"  style="width:100%;">
+      </div> 
+      <div class="item ">
+        <img src="dub.jpg"  style="width:100%;">
+      </div> 
+    </div></div><br>
+<a href="#"><button type="button" class=" btndance"> <span class="text">Painting</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btndance2"> <span class="text">Rangoli</span></button></a><br><br><br>
+      <a href="#"><button type="button" class="btn btn-info btn-block btnsing"> <span class="text">Drape a Model</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btnsing2"> <span class="text">Vegetable Carving</span></button></a><br><br><br>
+  <a href="#"><button type="button" class="btn btn-info btn-block btnintru"> <span class="text">Face Painting</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btnantak"> <span class="text">Mehendi</span></button><br><br><br>
+
+ </a><a href="#"><button type="button" class="btn btn-info btn-block btncartoon"> <span class="text">Cartooning</span></button></a>
+
+  
+ </div>
+<br><br><br><br></div>
+<br><br>
+
+<div class="part5">
+<div id="section3" class="container-fluid">
+<br><br><h4>Literary Events</h4><br>
+ <br>
+ <div id="myCarousel" class="carouselslide" data-ride="carousel">
+  
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      
+      
+      <div class="item active ">
+        <img src="pic20.jpg"  style="width:110%;">
+      </div>
+     <div class="item ">
+        <img src="pic28.jpg"  style="width:100%;">
+      </div> 
+      <div class="item ">
+        <img src="pic26.png"  style="width:100%;">
+      </div> 
+       <div class="item ">
+        <img src="pic27.jpg"  style="width:100%;">
+      </div> 
+      <div class="item ">
+        <img src="pic28.jpg"  style="width:100%;">
+      </div> 
+      <div class="item ">
+        <img src="dub.jpg"  style="width:100%;">
+      </div> 
+    </div></div><br>
+<a href="#"><button type="button" class=" btndance"> <span class="text">Poetry/span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btndance2"> <span class="text">Debate</span></button></a><br><br><br>
+      <a href="#"><button type="button" class="btn btn-info btn-block btncartoon"> <span class="text">Just a Minute</span></button></a>
+
+  
+ </div>
+<br><br><br><br></div>
+<br><br>
 <script>
  var myIndex = 0;
 var myIndex2=0;
