@@ -16,14 +16,18 @@
     font-weight: bold;
     line-height: 80px;
 }
-.form-content
+.type1
 {
-    padding: 5%;
+    padding: 5% 41%;
     border: 1px solid #ced4da;
     margin-bottom: 2%;
 }
 .form-control{
-    border-radius:1.5rem;
+    border-radius:1.5em;
+    display: inline-block;
+    position: absolute;
+    left:30%;
+    width: 20vw;
 }
 .btnSubmit
 {
@@ -31,50 +35,64 @@
     border-radius:1.5rem;
     padding: 1%;
     width: 20%;
+    position: absolute;
+    left: 41%;
+    top:75%;
     cursor: pointer;
     background: #0062cc;
     color: #fff;
 }
-h1{
-    color: red
-    ;
+.text1{
+    background-color: #283;
+    width: 50%;
+    border-radius: 20vw;
+    position: absolute;
+    left:25%;
+
+}
+h2{
+    color: brown;
+    font-size: 2em;
+    padding: 0% 32%;
 }
 </style>
-<div class="container register-form">
-            <div class="form">
+<body>
+
+         
                 <div class="note">
                     <p>Welcome Svitians to Sanchalana 19</p>
                 </div>
 
-                <div class="form-content">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" value=""/>
-                            </div>
+                <div class="type1">
+                    
+                            <div class="text1">
+                              
+                             <span><h2>Registration form</h2><input type="text" class="form-control" placeholder="Your Name *" value=""/><br><br></span>
+                                <input type="text" class="form-control" placeholder="USN" value=""/><br><br>
+                                <input type="text" class="form-control" placeholder=" SEM" value=""/><br><br>
+                                <input type="text" class="form-control" placeholder="Branch" value=""/>
+                     
                             <br><br>
-                            <div class="form-group">
+                           
                                 <input type="text" class="form-control" placeholder="Phone Number *" value=""/>
+                          
+                        
+                            <br><br>
+                        
+                            
+        
+                                <select class="form-control">
+                                        <option selected=""> Select Event</option>
+                                        <option>Gaming</option>
+                                        <option>Svit idol</option>
+                                        <option>Solo singing</option>
+                                 </select>
+                             <!-- form-group end.// --><br><br>
                             </div>
-                        </div>
-                        <br><br>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                        <select><h1>Event</h1>
-                         <option>
-                          <li>
-                          ise</li>
-                          <li>e</li>
-                </option>
-            </select>
-                     </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Confirm Password *" value=""/>
+                          </div>  
                             </div>
-                        </div>
-                    </div>
+                            </div><br><br>
                     <button type="button" class="btnSubmit">Submit</button>
-                </div>
-            </div>
-        </div>
+                
+       </body>
 </html>
