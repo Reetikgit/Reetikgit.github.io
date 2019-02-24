@@ -23,7 +23,7 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto;
-  border: 30px solid brown; /* Enable scroll if needed */
+  /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   -webkit-animation-name: fadeIn; /* Fade in the background */
@@ -31,7 +31,10 @@
   animation-name: fadeIn;
   animation-duration: 0.4s
 }
-
+.popup{
+  color: pink;
+  font-size: 2vw;
+}
 /* Modal Content */
 .modal-content {
  
@@ -40,7 +43,7 @@
   width: 50%;
   left: 24%;
   top:40%;
-  border: 28px solid brown;
+  border: 15px solid brown;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
@@ -636,7 +639,10 @@ div.navbar-collapse ul.navbar-nav li{
 
 }
 
-
+.popup2{
+  color: pink;
+  font-size: 3vw;
+}
 .video-container{
   align-self: center;
   float: center;
@@ -722,14 +728,14 @@ div.navbar-collapse ul.navbar-nav li{
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-      <h2>Hey User!!Todays Special:</h2>
+      <h2 class="popup2">Hey User!!Todays Special:</h2>
     </div>
     <div class="modal-body">
       <p>Yup Its Mismatch Day</p>
       <p>Enjoy the Day</p>
     </div>
     <div class="modal-footer">
-      <h3>Team Sanchalana</h3>
+      <h3 class="popup">Team Sanchalana</h3>
     </div>
   </div>
 
