@@ -14,6 +14,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
+.myModal
+{
+  border-radius: 30px;
+}
 .modal {
   display: none; /* Hidden by default */
 /* Stay in place */
@@ -23,6 +27,7 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto;
+   border-radius: 30px;
   /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -33,7 +38,7 @@
 }
 .popup{
   color: pink;
-  font-size: 2vw;
+  font-size: 150%;
 }
 /* Modal Content */
 .modal-content {
@@ -42,8 +47,10 @@
   background-color: cyan;
   width: 50%;
   left: 24%;
-  top:40%;
+  top:20%;
+  height: 40%;
   border: 15px solid brown;
+  border-radius: 50px;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
@@ -600,7 +607,8 @@ h4{
   background-color:#00bcd4;
 }
 #mySidenav button {
-  position: absolute;
+  position:fixed;
+  
   left: -80px;
   transition: 0.2s;
   padding: 15px;
@@ -610,7 +618,7 @@ h4{
   color: white;
   height: 50px;
   border-radius: 20px;
-  top:2.5%;
+  top:35%;
   background-color: #359;
 }
 
@@ -641,7 +649,7 @@ div.navbar-collapse ul.navbar-nav li{
 
 .popup2{
   color: pink;
-  font-size: 3vw;
+  font-size: 220%;
 }
 .video-container{
   align-self: center;
@@ -731,6 +739,7 @@ div.navbar-collapse ul.navbar-nav li{
       <h2 class="popup2">Hey User!!Todays Special:</h2>
     </div>
     <div class="modal-body">
+      
       <p>Yup Its Mismatch Day</p>
       <p>Enjoy the Day</p>
     </div>
