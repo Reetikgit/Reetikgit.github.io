@@ -30,14 +30,30 @@ body, html {
   background-size: cover;
 }
 h1{
-  position:relative;
+
+  position:absolute;
   font-size: 4vw;
 }
 h2{
-  position: relative;
+  position: absolute;
   font-size:2vw;
 }
 /* Position text in the middle of the page/image */
+.text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
@@ -58,11 +74,13 @@ h2{
 <body>
 
 <div class="bg-image"></div>
-
+<div class="text">
+<h2>SANCHALANA</h2><br><br>
+  <h1 >FACE PAINTING</h1></div><br><br>
 <div class="bg-text">
-  <h2>SANCHALANA</h2>
-  <h1 >FACE PAINTING</h1>
-  <hr><p>
+  
+
+  <p>
           ​REGISTRATION FEE: Rs.60 per team<br><br>
 <br>
 DATE: 26.03.2018 (Monday)<br>
