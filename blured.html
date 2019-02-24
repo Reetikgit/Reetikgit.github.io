@@ -13,7 +13,7 @@ body, html {
 * {
   box-sizing: border-box;
 }
-
+@media only screen and (min-device-width: 100px) {
 .bg-image {
   /* The image used */
   margin: 0;
@@ -32,7 +32,7 @@ overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+}}
 h1{
 
   position:absolute;
@@ -53,9 +53,9 @@ h2{
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
-  position: fixed;
+  position: absolute;
   top: 0%;
-  background-color:#765;
+  
   left: 10%;
   width: 80%;
   padding: 20px;
