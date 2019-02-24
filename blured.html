@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+<style media="screen">
 body, html {
   height: 100%;
   margin: 0;
@@ -15,23 +16,27 @@ body, html {
 
 .bg-image {
   /* The image used */
+  margin: 0;
+
   background-image: url("pic59.jpg");
   background-attachment: fixed;
   /* Add the blur effect */
   filter: blur(5px);
   -webkit-filter: blur(1.5px);
-  background-position: fixed;
-  /* Full height */
+  
+overflow: hidden;
+
   height: 150%; 
   width: 100%;
   /* Center and scale the image nicely */
-  background-position: center;
-  
+  background-position: 100% top;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 h1{
 
   position:absolute;
+  font-family: cursive;
   font-size: 300%;
   color: black;
   left: 32%;
@@ -48,11 +53,10 @@ h2{
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
-  position: absolute;
+  position: fixed;
   top: 0%;
+  background-color:#765;
   left: 10%;
-
-
   width: 80%;
   padding: 20px;
 
@@ -87,7 +91,7 @@ h2{
   
 
   <p>
-          ​REGISTRATION FEE: Rs.60 per team<br><br>
+ ​REGISTRATION FEE: Rs.60 per team<br><br>
 <br>
 DATE: 26.03.2018 (Monday)<br>
 <br>
@@ -95,7 +99,7 @@ VENUE: Chemistry Lab<br>
 <br>
 TIME: 1:00-2:00 pm<br>
 <br>
-RULES<br>
+<h3>RULES</h3><br>
 <br>
 1.Theme will announced on spot <br>.
 2.Get your own materials<br>.
