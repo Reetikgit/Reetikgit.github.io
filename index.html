@@ -14,7 +14,86 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+  border-radius:100px solid green;
+}
 
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: cyan;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.2s
+border-radius:100px solid green;
+}
+
+/* The Close Button */
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #656;
+  color: blue;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color:#656;
+  color: blue;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
 
 body {
   margin: 0;
@@ -514,17 +593,19 @@ h4{
 .small{
   background-color:#00bcd4;
 }
-#mySidenav a {
+#mySidenav button {
   position: absolute;
   left: -80px;
-  transition: 0.3s;
+  transition: 0.2s;
   padding: 15px;
   width: 100px;
   text-decoration:none;
   font-size: 15px;
   color: white;
+  height: 50px;
   border-radius: 30px;
   top:2.5%;
+  background-color: red;
 }
 
 div.navbar-collapse ul.navbar-nav li{
@@ -535,7 +616,7 @@ div.navbar-collapse ul.navbar-nav li{
 }
 
 
-#mySidenav a:hover {
+#mySidenav button:hover {
   left: 0;
   background-color: green;
 }
@@ -628,6 +709,33 @@ div.navbar-collapse ul.navbar-nav li{
 </style>
 
 <body>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Hey User!!Todays Special:</h2>
+    </div>
+    <div class="modal-body">
+      <p>Yup Its Mismatch Day</p>
+      <p>Enjoy the Day</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Team Sanchalana</h3>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
   <div class="container">
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -672,7 +780,7 @@ div.navbar-collapse ul.navbar-nav li{
 <h1 class="neon3" >Sai Vidya Institute of Tech. </h1><br><br><br><br><br>
 <div id="mySidenav" class="sidenav">
  <br><br><br><br><br><br><br>
-  <a href="http://saividya.ac.in/article/show/62/0/ABOUT%20SVIT.html" id="about">About Svit</a></div>
+  <button id="myBtn">CLick</div>
 <br>
   <img class="svit" src="pic23.png" >
    <br><br><br><br>
@@ -1028,6 +1136,30 @@ div.navbar-collapse ul.navbar-nav li{
 </div>
 <br><br><br><br><br></div>
 <script>
+  var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
  var myIndex = 0;
 var myIndex2=0;
 var myIndex3=0;
