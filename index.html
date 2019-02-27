@@ -13,6 +13,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="footer, address, phone, icons" />
+
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
 <style>
 
 
@@ -100,6 +112,15 @@
   background-color:#009688;
   color: blue;
 }
+.modal-footer2 {
+  
+  position: absolute;
+  background-color:#01363f;
+  color: blue;
+  height:400px;
+  width:100%;
+}
+
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
@@ -770,11 +791,11 @@ div.navbar-collapse ul.navbar-nav li{
   background-attachment: fixed;
 }
 .part5{
-  background-color: #450;
+  background-color: #353a59;
   background-attachment: fixed;
 }
 .part6{
-  background-color: #320;
+  background-color: gray;
 }
 .btnset1{
 
@@ -786,6 +807,177 @@ div.navbar-collapse ul.navbar-nav li{
 }
 .carousel-inner{
   border-radius: 400px ;
+
+}
+
+<style>
+.footer-distributed{
+  background-color:red;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  #5383d3;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 30px;
+}
+
+.footer-distributed .footer-icons a{
+
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 0px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
 
 }
 </style>
@@ -872,7 +1064,7 @@ div.navbar-collapse ul.navbar-nav li{
   
   <br>
  
-  <input type="image" src="top_hover.png"onclick="topFunction()" id="myBtn" width="70px">
+  <input type="image" src="top_hover.png"onclick="topFunction()" id="myBtn" width="50px">
 
   <div id="myCarousel" class="carousel slide5" data-ride="carousel">
     <!-- Indicators -->
@@ -1217,12 +1409,67 @@ div.navbar-collapse ul.navbar-nav li{
       
 </div>
 <br><br><br><br><br></div>
-<div class="developer">
+<footer class="footer-distributed">
 
-    <p><h2>Developed and Designd by</h2>
-      <h2>Reetik Chitragupt
-          4th sem ISE</h2></p>
-</div>
+      <div class="footer-left">
+
+        <h3><span><br>Developed&Designed by</span><br>
+        Reetik Chitragupt<br>4th Sem ISE</h3>
+
+        <p class="footer-links">
+          <a href="#">SVIT</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">SANCHALANA &copy; 2019</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Sai Vidya Institute of Techonology</span> Bengaluru</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>7355670645</p>
+        </div>
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+        
+
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>With Support from</span>
+          Nikhil Bhatt<br>
+          Anupam Mishra
+        </p>
+
+        
+
+      </div>
+
+    </footer>
+
 <script>
   var modal = document.getElementById('myModal');
 
