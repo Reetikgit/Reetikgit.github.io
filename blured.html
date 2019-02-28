@@ -24,10 +24,12 @@ body, html {
   background-image:url("pic59.jpg");
   
   /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(2px);
 
   background-attachment: fixed;
 
-  height: 130%;
+  height: 170%;
 
   background-repeat: no-repeat;
   -webkit-background-size:cover;
@@ -52,7 +54,7 @@ h2{
   color: orange;
 }
 .neon {
-  font-size:230%;
+  font-size:200%;
   color: white;
   text-shadow:
 
@@ -81,10 +83,10 @@ h3{
   border: 3px solid #f1f1f1;
   position: absolute;
   top: 0%;
-  font-size: 2.5vw;
+  
   
   width: 80%;
-  padding: 5px;
+  padding: 2px;
 
 }
 .bg-text {
@@ -94,7 +96,7 @@ h3{
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 75%;
+  top: 84%;
   left: 50%;
   transform: translate(-50%, -50%);
  
@@ -105,31 +107,62 @@ h3{
 }
 .btnhome{
   position: absolute;
-  width:15%;
+  width:20%;
   padding: 5px;
-  color: red;
-  background-color: white;
+  color: white;
+  background-color: #0D5F96;
  
   top:2%;
-  left: 82%;
+  left: 100%;
 
+}
+.footer-distributed{
+  background-color:#0A2843;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 0px sans-serif;
+
+  padding: 5px 5px;
+  margin-top: -60px;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 100%;
+
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 15px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  #5383d3;
 }
 </style>
 </head>
 <body>
-  <header>
- <a href="index.html"><button type="button" class="btn btn-info btn-block btnhome"> <span class="text2">HOME</span></button></a></header>
-<div class="bgimg">
+
+
+<div class="bgimg"></div>
+  
 <div class="text">
 
- 
+<a href="index.html"><button type="button" class="btn btn-info btn-block btnhome"> HOME</button></a>
   <h2 class="neon">FACE PAINTING</h2><br><br>
   <br></div>
 <br><br>
-
 <br><div class="bg-text">
   
- 
+
   <p>
  ​REGISTRATION FEE: Rs.60 per team<br><br>
 <br>
@@ -155,7 +188,13 @@ Student co-ordinator<br>
 <br>
 Kusumanjali<br>
 Harshitha D S
-  </p></div>
+  </p>
 </div>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3><span><br></span>DD by Reetik Chitragupt</h3>
+        </div> 
 </body>
 </html>
