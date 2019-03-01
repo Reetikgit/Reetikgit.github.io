@@ -1169,12 +1169,12 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#section1">Cultural Events</a></li>
-          <li><a href="#section2">Fun house</a></li>
+          <li><a href="#section1" data-toggle="collapse" data-target=".navbar-collapse.show">Cultural Events</a></li>
+          <li><a href="#section2" data-target=".navbar-collapse.show">Fun house</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">See Also <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#section4">Theater Events</a></li>
+              <li><a href="#section4" data-target=".navbar-collapse.show">Theater Events</a></li>
               <li><a href="#section3">Art Events</a></li>
               <li><a href="#section5">Literary Events</a></li>
               <li><a href="#section52">Casual Events</a></li>
@@ -1615,6 +1615,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
     </footer>
 
 <script>
+
   var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
