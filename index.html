@@ -723,13 +723,16 @@ h4{
   background-color: #359;
 }
 
-div.navbar-collapse ul.navbar-nav li{
+div.navbar-collapse ul.navbar-nav li .dropdown-menu{
   
  background: -webkit-linear-gradient(left, #0072ff, #8811c5);
   font-size: 20px;
 
 }
-
+div.navbar-collapse ul{
+   background: -webkit-linear-gradient(left, #4128a3, #8811c5);
+  font-size: 20px;
+}
 
 #mySidenav button:hover {
   left: 0;
@@ -1110,6 +1113,17 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
   }
 }
 
+.navbar-toggle.collapsed {
+  .top-bar {
+    transform: rotate(0);
+  }
+  .middle-bar {
+    opacity: 1;
+  }
+  .bottom-bar {
+    transform: rotate(0);
+  }
+}
 <body>
 </style>
 
