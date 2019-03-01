@@ -792,6 +792,7 @@ div.navbar-collapse ul.navbar-nav li{
 #section52{
   display: inline-block;
 }
+
 .developer{
 
     background: -webkit-linear-gradient(left, #9286ff, #9011c5);
@@ -1071,10 +1072,46 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
   }
 
 }
-</style>
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+  
+  &:hover {
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+  }
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+
+  &.collapsed {
+    .top-bar {
+      transform: rotate(0);      
+    }
+    .middle-bar {
+      opacity: 1;
+    }
+    .bottom-bar {
+      transform: rotate(0);
+    }
+  }
+}
 
 <body>
-
+</style>
 
 
 <!-- The Modal -->
@@ -1101,41 +1138,49 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 
 
 
-  <div class="container">
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-inverse navbar-fixed-top ">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-
-      <a class="navbar-brand " href="#">Event List</a><
-    </div>
-    <div>
-      <div class="collapse navbar-collapse abc" id="myNavbar">
+ <div class="container">
+  <!-- Static navbar -->
+  <nav class="navbar navbar-inverse navbar-default navbar-fixed-top ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Events</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="color"><a href="#section1">Cultural Event</a></li>
-          <li class="color"><a href="#section2">Fun House</a></li>
-          <li class="color"><a href="#section3">Art Events</a></li>
-          <li class="color"><a href="#section4">Theather Events</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li class="color"><a href="#section5">Literary Events</a></li>
-              <li class="color"><a href="#section52">Casual Events</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#section1">Cultural Events</a></li>
+          <li><a href="#section2">Fun house</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">See Also <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#section4">Theater Events</a></li>
+              <li><a href="#section3">Art Events</a></li>
+              <li><a href="#section5">Literary Events</a></li>
+              <li><a href="#section52">Casual Events</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">New Events</li>
+              <li><a href="#">You Murderer</a></li>
+              <li><a href="#">PUBG Mobile</a></li>
             </ul>
-            <li></li>
-            <li></li>
-            <li class="color2"><a href="signup.html">Register Online</a></li>
           </li>
         </ul>
-      </div>
-    </div>
-  </div>
-</nav>  
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Specials <span class="sr-only">(current)</span></a></li>
+          <li><a href="../navbar-static-top/">DJ NIGHT</a></li>
+           <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
+          <li><a href="#section7">Developer blog</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+
 <br>
 
 
@@ -1500,6 +1545,8 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
       
 </div>
 <br><br><br><br><br></div>
+
+<div id="section7">
 <footer class="footer-distributed">
 
       <div class="footer-left">
@@ -1550,7 +1597,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
         
 
       </div>
-
+      </div>
     </footer>
 
 <script>
