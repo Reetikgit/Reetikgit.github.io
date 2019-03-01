@@ -305,7 +305,7 @@ left:58%;
     0 0 30px red,
     0 0 30px pink;
     font-size: 3vw;
-    
+
 }
 .neon2 {
   color: white;
@@ -1158,21 +1158,21 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
   <nav class="navbar navbar-inverse navbar-default navbar-fixed-top ">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarDiv" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar top-bar"></span>
           <span class="icon-bar middle-bar"></span>
           <span class="icon-bar bottom-bar"></span>
         </button>
-        <a class="navbar-brand" href="#" data-target=".navbar-collapse.show">Events</a>
+        <a class="navbar-brand" href="#" data-toggle="collapse" data-target=".navbar-collapse.hide">Events</a>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
+      <div id="navbar" class="navbar-collapse collapse" data-toggle="collapse" data-target=".navbar-collapse.show">
         <ul class="nav navbar-nav">
    
 
           <li class="active"><a href="#" data-target=".navbar-collapse.show">Home</a></li>
           <li><a href="#section1" data-toggle="collapse" data-target=".navbar-collapse.show">Cultural Events</a></li>
-          <li><a href="#section2" data-target=".navbar-collapse.show">Fun house</a></li>
+          <li><a href="#section2" data-toggle="collapse" data-target=".navbar-collapse.hide">Fun house</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">See Also <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
@@ -1217,7 +1217,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
   <br>
  
   <input type="image" src="top_hover.png"onclick="topFunction()" id="myBtn" width="50px">
-
+  <div class="container">
   <div id="myCarousel" class="carousel slide5" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -1300,7 +1300,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
- </div>
+ </div></div>
 
 <br><br><br>
 <p class="small" align="center"><marquee bgcolor="lightblue"behavior="alternate" direction="left" width="100%"><font color="red" size ="5em">Old Memories@Sanchalana</marquee></font> </p>
@@ -1617,10 +1617,11 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
     </footer>
 
 <script>
-
-$('.navbar-collapse a').click(function(){
-            $(".navbar-collapse").collapse('hide');
-        });
+$('.navbar-nav li a').on('click', function(){
+    if(!$( this ).hasClass('dropdown-toggle')){
+        $('.navbar-collapse').collapse('hide');
+    }
+});
   var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
@@ -1710,6 +1711,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 </script>
 
 </body>
