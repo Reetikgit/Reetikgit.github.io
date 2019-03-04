@@ -360,7 +360,9 @@ left:58%;
   width: 50px;
   
 }
-
+.container-flex2{
+  background: radial-gradient(circle at 30% 107%, orange 20%, pink 5%, green 45%, #d6249f 60%, #285AEB 90%);
+}
 #myBtn:hover {
   background-color:brown;
 }
@@ -1120,9 +1122,52 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
     transform: rotate(0);
   }
 }
-<body>
-</style>
 
+  #stage {
+    margin: 1em auto;
+    width: 360px;
+    height: 270px;
+    border: 10px solid #000;
+    overflow: hidden;
+  }
+  #stage a {
+    position: relative;
+    display: inline-block;
+  }
+  #stage a::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    content: attr(title);
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 2px 2px 0 #333;
+  }
+
+  #stage a:nth-of-type(2) {
+    left: 360px;
+    top: -50%;
+    animation-name: slider2;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,1.5,0.5,1);
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes slider2 {
+    from { transform: translateY(-50%) rotate(30deg); left: 360px; }
+    to   { transform: translateY(-50%); left: 0px; }
+  }
+
+
+</style>
+<body>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -1212,7 +1257,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
  
   <input type="image" src="top_hover.png"onclick="topFunction()" id="myBtn" width="50px">
 
-<div class="container">
+
   
 
   <div id="myCarousel" class="carousel slide5" data-ride="carousel" >
@@ -1349,22 +1394,19 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
  </div></div>
 
 
-<br><br><br>
-<p class="small" align="center"><marquee bgcolor="lightblue"behavior="alternate" direction="left" width="100%"><font color="red" size ="5em">Old Memories@Sanchalana</marquee></font> </p>
+<br><br>
 
-</p>
 <div class="container-flex2">
- <iframe class="video-container"width="420" height="345"
-  src="https://www.youtube.com/embed/agq2tM3bqrY?playlist=agq2tM3bqrY&loop=1&amp;controls=0&amp;showinfo=0&amp;autoplay=1"frameborder="0" allow="autoplay; encrypted-media">
- 
-</iframe>
+ <video  width="100%"height="300" autoplay loop muted>
+  <source src="san1.mp4"type"video/mp4">
+</video>
  </div>
 
 </div>
 
 <p><marquee direction="left"behavior="right"><h3 class="neon2">Its Season for Culture and Fun</h3></p></marquee>
 <div class="part1">
-<div id="section1" class="container1">
+<div id="section1">
 
   <br><br><h4 class="headding">Cultural Carnival</h4><br>
  <br>
@@ -1413,7 +1455,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 <br><br><br><br><br></div>
 <br><br>
 <div class="part2">
-<div id="section2" class="container1">
+<div id="section2">
 <br><br><h4 class="headding">Fun & Games</h4><br>
  <br>
  <div id="myCarousel" class="carouselslide" data-ride="carousel">
@@ -1504,7 +1546,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 <br><br><br><br><br></div>
 <br><br>
 <div class="part4">
-<div id="section3" class="container1">
+<div id="section3" >
 <br><br><h4 class="headding">Artistic Challenges</h4><br>
  <br>
  <div id="myCarousel" class="carouselslide" data-ride="carousel">
@@ -1545,7 +1587,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 <br><br>
 
 <div class="part5">
-<div id="section5" class="container1">
+<div id="section5" >
 <br><br><h4 class="headding">Literary Events</h4><br>
  <br>
  <div id="myCarousel" class="carouselslide" data-ride="carousel">
@@ -1577,7 +1619,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 <br><br><br><br></div>
 <br><br>
 <div class="part6">
-<div id="section52" class="container1">
+<div id="section52" >
 
   <br><br><h4 class="headding">Casual Events</h4><br>
  <br>
@@ -1608,6 +1650,23 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
       
 </div>
 <br><br><br><br><br></div>
+
+
+<p class="small" align="center"><marquee bgcolor="lightblue"behavior="alternate" direction="left" width="100%"><font color="red" size ="5em">Old Memories@Sanchalana</marquee></font> </p>
+
+</p>
+<div class="container-flex2">
+ <iframe class="video-container"width="420" height="345"
+  src="https://www.youtube.com/embed/agq2tM3bqrY?playlist=agq2tM3bqrY&loop=1&amp;controls=0&amp;showinfo=0&amp;autoplay=1"frameborder="0" allow="autoplay; encrypted-media">
+ 
+</iframe>
+ </div>
+
+
+
+
+
+
 
 <div id="section7">
 <footer class="footer-distributed">
@@ -1738,6 +1797,18 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+ window.addEventListener("DOMContentLoaded", function(e) {
+
+    var stage = document.getElementById("stage");
+    var slideComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");
+    for(var z=0; z < arr.length; z++) {
+      arr[i].addEventListener("animationend", slideComplete, false);
+    }
+
+  }, false);
 
 </script>
 
