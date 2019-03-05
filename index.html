@@ -361,7 +361,7 @@ left:58%;
   
 }
 .container-flex2{
-  background: radial-gradient(circle at 30% 107%, orange 20%, pink 5%, green 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, orange 2%, pink 5%, green 45%, #d6249f 60%, #285AEB 90%);
 }
 #myBtn:hover {
   background-color:brown;
@@ -371,7 +371,7 @@ h3{
   font-size: 0.8em;
 }
 .headding{
-  background: radial-gradient(circle at 30% 107%, red 0%, red 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  font-size: 3.5em;
   
 }
 h5{
@@ -755,12 +755,11 @@ div.navbar-collapse ul{
 .video-container{
   align-self: center;
   float: center;
-  border:0px solid black;
+  border:10px solid black;
  
   width: 95vw;
 
- border-left-color: cyan;
- border-right-color: cyan;
+
   background:transparent;
 
 }
@@ -1074,97 +1073,224 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 
 }
 
-.navbar-toggle {
-  border: none;
-  background: transparent !important;
+#presentation{
+  width: 480px;
+  height: 200px;
+  padding: 20px;
+  margin: auto;
+  background: #FFF;
+  margin-top: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+  transition: all 0.3s; 
+  border-radius: 3px;
+}
+
+#presentation:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+}
+
+#floating-button{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #db4437;
+  position: fixed;
+  bottom: 50px;
+  left: 10px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #666;
+}
+
+.plus{
+  color: white;
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 55px;
+  font-size: 38px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  animation: plus-out 0.3s;
+  transition: all 0.3s;
+}
+
+#container-floating{
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 30px;
+  left: 10px;
+  z-index: 50px;
+}
+
+#container-floating:hover{
+  height: 400px;
+  width: 90px;
+  padding: 30px;
+}
+
+#container-floating:hover .plus{
+  animation: plus-in 0.15s linear;
+  animation-fill-mode: forwards;
+}
+
+.edit{
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  padding: 0;
+  opacity: 0;
+  margin: auto;
+  line-height: 200px;
+  transform: rotateZ(-70deg);
+  transition: all 0.3s;
+  animation: edit-out 0.3s;
+}
+
+#container-floating:hover .edit{
+  animation: edit-in 0.2s;
+   animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes edit-in{
+    from {opacity: 0; transform: rotateZ(-70deg);}
+    to {opacity: 1; transform: rotateZ(0deg);}
+}
+
+@keyframes edit-out{
+    from {opacity: 1; transform: rotateZ(0deg);}
+    to {opacity: 0; transform: rotateZ(-70deg);}
+}
+
+@keyframes plus-in{
+    from {opacity: 1; transform: rotateZ(0deg);}
+    to {opacity: 0; transform: rotateZ(180deg);}
+}
+
+@keyframes plus-out{
+    from {opacity: 0; transform: rotateZ(180deg);}
+    to {opacity: 1; transform: rotateZ(0deg);}
+}
+
+.nds{
+  width: 90px;
+  height: 40px;
+  border-radius: 10%;
+  position: fixed;
+  z-index: 300;
+  transform:  scale(0);
+  cursor: pointer;
+}
+
+.nd1{
+  background: #d3a411;
+  left: 10px;
+  bottom: 120px;
+  animation-delay: 0.2s;
+    animation: bounce-out-nds 0.3s linear;
+  animation-fill-mode:  forwards;
+}
+
+.nd3{
+  background: #3c80f6;
+  left: 10px;
+  bottom: 180px;
+  animation-delay: 0.15s;
+    animation: bounce-out-nds 0.15s linear;
+  animation-fill-mode:  forwards;
+}
+
+.nd4{
+  background: #ba68c8;
+  left: 10px;
+  bottom: 240px;
+  animation-delay: 0.1s;
+    animation: bounce-out-nds 0.1s linear;
+  animation-fill-mode:  forwards;
+}
+
+.nd5{
+ background: #fb92a5;
+  background-size: 100%;
+  left: 10px;
+  bottom: 300px;
+  animation-delay: 0.08s;
+  animation: bounce-out-nds 0.1s linear;
+  animation-fill-mode:  forwards;
+}
+
+@keyframes bounce-nds{
+    from {opacity: 0;}
+    to {opacity: 1; transform: scale(1);}
+}
+
+@keyframes bounce-out-nds{
+    from {opacity: 1; transform: scale(1);}
+    to {opacity: 0; transform: scale(0);}
+}
+
+#container-floating:hover .nds{
   
-  &:hover {
-    background: transparent !important;
-  }
-
-  .icon-bar {
-    width: 22px;
-    transition: all 0.2s;
-  }
-  .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-  }
-  .middle-bar {
-    opacity: 0;
-  }
-  .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-  }
-
-  &.collapsed {
-    .top-bar {
-      transform: rotate(0);      
-    }
-    .middle-bar {
-      opacity: 1;
-    }
-    .bottom-bar {
-      transform: rotate(0);
-    }
-  }
+  animation: bounce-nds 0.1s linear;
+  animation-fill-mode:  forwards;
 }
 
-.navbar-toggle.collapsed {
-  .top-bar {
-    transform: rotate(0);
-  }
-  .middle-bar {
-    opacity: 1;
-  }
-  .bottom-bar {
-    transform: rotate(0);
-  }
+#container-floating:hover .nd3{
+  animation-delay: 0.08s;
+}
+#container-floating:hover .nd4{
+  animation-delay: 0.15s;
+}
+#container-floating:hover .nd5{
+  animation-delay: 0.2s;
 }
 
-  #stage {
-    margin: 1em auto;
-    width: 360px;
-    height: 270px;
-    border: 10px solid #000;
-    overflow: hidden;
-  }
-  #stage a {
-    position: relative;
-    display: inline-block;
-  }
-  #stage a::after {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-    content: attr(title);
-    font-weight: bold;
-    font-size: 2em;
-    color: #fff;
-    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 2px 2px 0 #333;
-  }
+.letter{
+  font-size: 23px;
+  font-family: 'Roboto';
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 40px;
+}
 
-  #stage a:nth-of-type(2) {
-    left: 360px;
-    top: -50%;
-    animation-name: slider2;
-    animation-delay: 4s;
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0,1.5,0.5,1);
-  }
-  #stage a:nth-of-type(n+3) {
-    display: none;
-  }
+.reminder{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  line-height: 40px;
+}
 
-  @keyframes slider2 {
-    from { transform: translateY(-50%) rotate(30deg); left: 360px; }
-    to   { transform: translateY(-50%); left: 0px; }
-  }
-
+.profile{
+  border-radius: 50%;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+}
 
 </style>
 <body>
@@ -1205,7 +1331,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
           <span class="icon-bar middle-bar"></span>
           <span class="icon-bar bottom-bar"></span>
         </button>
-        <a class="navbar-brand" href="#" data-toggle="collapse" data-target=".navbar-collapse.hide">Events</a>
+        <a class="navbar-brand" href="#" data-toggle="collapse" data-target=".navbar-collapse.hide">Sanchalana</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse" data-toggle="collapse" data-target=".navbar-collapse.show">
         <ul class="nav navbar-nav">
@@ -1214,7 +1340,9 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
           <li class="active"><a href="#" data-target=".navbar-collapse.show">Home</a></li>
           <li><a href="#section1" data-toggle="collapse" data-target=".navbar-collapse.show">Cultural Events</a></li>
           <li><a href="#section2" data-toggle="collapse" data-target=".navbar-collapse.hide">Fun house</a></li>
+           <li><a href="../navbar-static-top/">DJ Night</a></li>
           <li class="dropdown">
+
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">See Also <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#section4" data-target=".navbar-collapse.show">Theater Events</a></li>
@@ -1227,10 +1355,16 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Specials <span class="sr-only">(current)</span></a></li>
-          <li><a href="../navbar-static-top/">DJ Night</a></li>
-           <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
-          <li><a href="#section7">Developer blog</a></li>
+           <li class="dropdown">
+
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More About<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li ><a href="#" data-target=".navbar-collapse.show">Svit </a></li>
+              <li><a href="#section3">Sanchalana<span class="sr-only">(current)</span></a></li>
+         
+          
+          
+          
         </ul>
       </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
@@ -1258,7 +1392,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
   <input type="image" src="top_hover.png"onclick="topFunction()" id="myBtn" width="50px">
 
 
-  
+  <div class="container">
 
   <div id="myCarousel" class="carousel slide5" data-ride="carousel" >
 
@@ -1348,7 +1482,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
       </div></div>
 
      <div class="item ">
-        <img src="pic59.jpg"  style="width:100%;">
+        <a href="blured.html"><img src="pic59.jpg"  style="width:100%;"></a>
       <div class="carousel-caption">
         <h4>Face Painting</h4>
       </div></div>
@@ -1394,14 +1528,17 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
  </div></div>
 
 
-<br><br>
+<br>
 
+<p class="small" align="center"><marquee bgcolor="lightblue"behavior="alternate" direction="left" width="100%"><font color="red" size ="5em">Old Memories@Sanchalana</marquee></font> </p>
+
+</p>
 <div class="container-flex2">
- <video  width="100%"height="300" autoplay loop muted>
-  <source src="san1.mp4"type"video/mp4">
-</video>
+ <iframe class="video-container"width="420" height="345"
+  src="https://www.youtube.com/embed/agq2tM3bqrY?playlist=agq2tM3bqrY&loop=1&amp;controls=0&amp;showinfo=0&amp;autoplay=1"frameborder="0" allow="autoplay; encrypted-media">
+ 
+</iframe>
  </div>
-
 </div>
 
 <p><marquee direction="left"behavior="right"><h3 class="neon2">Its Season for Culture and Fun</h3></p></marquee>
@@ -1652,16 +1789,25 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 <br><br><br><br><br></div>
 
 
-<p class="small" align="center"><marquee bgcolor="lightblue"behavior="alternate" direction="left" width="100%"><font color="red" size ="5em">Old Memories@Sanchalana</marquee></font> </p>
 
-</p>
-<div class="container-flex2">
- <iframe class="video-container"width="420" height="345"
-  src="https://www.youtube.com/embed/agq2tM3bqrY?playlist=agq2tM3bqrY&loop=1&amp;controls=0&amp;showinfo=0&amp;autoplay=1"frameborder="0" allow="autoplay; encrypted-media">
- 
-</iframe>
- </div>
+<div id="container-floating">
 
+  <div id="Day1" class="nd5 nds" data-toggle="tooltip" data-placement="left" data-original-title="Simone">
+    <p class="letter">Day 1</p></div>
+  <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="contract@gmail.com"><img class="reminder">
+    <p class="letter">Day 2</p>
+  </div>
+  <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="Reminder"><p class="letter">Day 3</p></div>
+  <div class="nd1 nds" data-toggle="tooltip" data-placement="left" data-original-title="Edoardo@live.it"><img class="reminder">
+    <p class="letter">Day 4</p>
+  </div>
+
+  <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
+    <p class="plus">+</p>
+    <img class="edit" src="http://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
+  </div>
+
+</div>
 
 
 
@@ -1770,6 +1916,30 @@ window.onclick = function(event) {
   }
 }
 // 
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("Day1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myHeader");
