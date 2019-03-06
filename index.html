@@ -9,11 +9,15 @@
 <title>
       SVIT-Sanchalana-19
 </title>
+<script src="jquery.min.js"></script>
+
+<script src="jquery.firstVisitPopup.js"></script>
+
 <link rel="shortcut icon" href="icon.ico">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="jquery.min.js"></script>
 <script src="jquery.firstVisitPopup.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js" ></script>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -365,7 +369,7 @@ left:58%;
 .container-flex2{
   background: radial-gradient(circle at 30% 107%, orange 2%, pink 5%, green 45%, #d6249f 60%, #285AEB 90%);
 }
-#myBtn:hover {
+#MyBtn:hover {
   background-color:brown;
 }
 h3{
@@ -827,7 +831,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 }
 
 .carousel-inner{
-  border-radius: 400px ;
+  border-radius: 370px ;
   width:88vw;
  
  left:4%;
@@ -1003,7 +1007,10 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
   margin-right: 15px;
   margin-bottom: 15px;
 }
-
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
 .footer-distributed .footer-icons .fa-instagram {
 
   width: 35px;
@@ -1296,6 +1303,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
   white-space: nowrap;
 }
 .bts-popup {
+
   position: fixed;
   left: 0;
   top: 0;
@@ -1409,6 +1417,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 }
 @media only screen and (min-width: 1170px) {
   .bts-popup-container {
+    
     margin: 8em auto;
   }
 }
@@ -1646,7 +1655,6 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 
 </div></div>
 <br>
-
 <p class="small" align="center"><marquee bgcolor="lightblue"behavior="alternate" direction="left" width="100%"><font color="red" size ="5em">Old Memories@Sanchalana</marquee></font> </p>
 
 </p>
@@ -1825,9 +1833,9 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
       <div class="item ">
         <img src="pic63.jpg"  style="width:100%;">
       </div> 
-      <div class="item ">
+      <!-- <div class="item ">
         <img src="pic64.jpg"  style="width:100%;">
-      </div> 
+      </div>  -->
     </div></div><br>
 <a href="#"><button type="button" class=" btndance"> <span class="text">Painting</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btndance2"> <span class="text">Rangoli</span></button></a><br><br><br>
       <a href="#"><button type="button" class="btn btn-info btn-block btnsing"> <span class="text">Drape a Model</span></button></a><a href="#"><button type="button" class="btn btn-info btn-block btncarving"> <span class="text">Vegetable Carving</span></button></a><br><br><br>
@@ -1929,7 +1937,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 
 <div class="bts-popup" role="alert">
     <div class="bts-popup-container">
-      <img src="https://sanchalana.weebly.com/uploads/7/0/6/3/70632713/editor/logo_1.png?1521692928" alt="" width="80%" />
+      <img src="main.jpg" alt="" width="80%" />
         <p><h2>Hello User!! Welcome To Sanchalana Week</h2>
             <h4> Todays Special:Tapori Day</p></h4>
         <div class="bts-popup-button">
