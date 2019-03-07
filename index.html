@@ -710,22 +710,24 @@ h4{
 .small{
   background-color:#00bcd4;
 }
-/*#mySidenav button {
-  position:fixed;
-  
-  left: -50px;
+#mySidenav button {
+ position: fixed;
+  bottom: 20px;
+
+  right:-20px;
+  top:50%;
   transition: 0.2s;
-  padding: 15px;
+  
   width: 80px;
   text-decoration:none;
-  font-size: 8px;
+  font-size: 10px;
   color: white;
-  height: 50px;
-  border-radius: 10px;
-  top:20%;
+  height: 30px;
+  margin-right :0;
+  
   background-color: #359;
 }
-*/
+
 div.navbar-collapse ul.navbar-nav li .dropdown-menu{
   
  background: -webkit-linear-gradient(left, #0072ff, #8811c5);
@@ -1258,7 +1260,16 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 #container-floating:hover .nd5{
   animation-delay: 0.2s;
 }
-
+#rotate{
+  vertical-align:top;
+  margin-top:23px;
+  width:80px;height:30px;
+  transform:rotate(7deg);
+  -ms-transform:rotate(90deg); /* IE 9 */
+  -moz-transform:rotate(90deg); /* Firefox */
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  -o-transform:rotate(90deg); /* Opera */
+}
 .letter{
   font-size: 23px;
   font-family: 'Roboto';
@@ -1420,6 +1431,49 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
     
     margin: 8em auto;
   }
+}
+
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }
 </style>
 <body>
@@ -1949,6 +2003,12 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 
 
 
+
+<div id="mySidenav"><button id="rotate" onclick="myFunction2()">Status</button></div>
+
+<div id="snackbar">All Registrations are open...</div>
+
+
 <div id="section7">
 <footer class="footer-distributed">
 
@@ -2004,7 +2064,11 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
     </footer>
 
 <script>
-
+function myFunction2() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
 
 jQuery(document).ready(function($){
   
