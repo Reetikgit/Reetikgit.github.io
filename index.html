@@ -714,7 +714,7 @@ h4{
  position: fixed;
   bottom: 20px;
 
-  right:-20px;
+  right:-25px;
   top:50%;
   transition: 0.2s;
   
@@ -1357,6 +1357,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s;
+
 }
 .bts-popup-container img {
   padding: 20px 0 0 0;
@@ -1437,7 +1438,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 #snackbar {
   visibility: hidden;
   min-width: 250px;
-  margin-left: -125px;
+  margin-left: -200px;
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -1452,8 +1453,8 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 
 #snackbar.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  -webkit-animation: fadein 0.5s, fadeout 500s 500s;
+  animation: fadein 0.5s, fadeout 500s 500s;
 }
 
 @-webkit-keyframes fadein {
@@ -1559,7 +1560,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 <h1 class="glow" >Sanchalana</h1><br>
 
 
-<h1 class="neon3" >Sai Vidya Institute of Tech. </h1><br><br>
+<h1 class="neon3" >Sai Vidya Institute of Technology </h1><br><br>
 <h1 class="glow5" >2k19</h1><br><br>
  <br><br><br><br><br><br><br>
  
@@ -2006,7 +2007,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 
 <div id="mySidenav"><button id="rotate" onclick="myFunction2()">Status</button></div>
 
-<div id="snackbar">All Registrations are open...</div>
+<div id="snackbar"><marquee>Registration desk is open::Kindly Register before 20March</marquee></div>
 
 
 <div id="section7">
@@ -2067,7 +2068,7 @@ background: radial-gradient(circle at 30% 107%, orange 0%, yellow 5%, blue 45%, 
 function myFunction2() {
   var x = document.getElementById("snackbar");
   x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 12000);
 }
 
 jQuery(document).ready(function($){
